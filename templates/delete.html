@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="col-md-6" id="done">
+        <div class="shadow card" id="done-text">
+            <div class="card-body">
+                <h5>Are you sure this task is done?</h5>
+                <button type="submit" class="btn btn-danger">Confirm</button>
+            </div>
+
+        </div>
+    </div>
+</form>
+{% endblock %}
